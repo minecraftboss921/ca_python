@@ -1,0 +1,37 @@
+yes="yes"
+no="no"
+rectangle ="rectangle"
+circle ="circle"
+triangle ="triangle"
+
+question= input("Would you like to find the area of a rectangle,circle, or triangle: ")
+
+if question==rectangle:
+    w = input("Enter the width:")
+    l = input("Enter the lenght:")
+    t=area = w*l
+    print (t)
+elif question==no:
+    print ("Thank you.")
+
+
+elif question==circle:
+    import math
+    question = input("Would you like to find the area of a circle: ")
+    if question == yes:
+        r = input("Enter the r:")
+        t = area = math.pi * r * r
+        print (t)
+    elif question == no:
+        print ("Thank you.")
+
+elif question==triangle:
+
+    question = input("Would you like to find the area of a triangle: ")
+    if question == yes:
+        b = input("Enter the base:")
+        h = input("Enter the height:")
+        t = area = 0.5 * b * h
+        print (t)
+    elif question == no:
+        print ("Thank you.")
