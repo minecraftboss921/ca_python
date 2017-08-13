@@ -1,0 +1,41 @@
+
+import random
+
+print "Dice"
+a="1"
+b="2"
+c="3"
+d="4"
+e="5"
+f="6"
+yes="yes"
+y="y"
+
+question = input("would you like to roll the dice?")
+
+if (question == yes or question == y):
+
+
+    dice = random.randint(1,6)
+
+    if dice == 1:
+        print ("I am one.")
+
+    elif dice == 2:
+        print ("I am two.")
+
+
+    elif dice == 3:
+        print ("I am three.")
+
+    elif dice == 4:
+        print ("I am four.")
+
+    elif dice == 5:
+        print ("I am five.")
+
+    elif dice == 6:
+        print ("I am six.")
+
+else:
+    print("Thank you for saying no");
